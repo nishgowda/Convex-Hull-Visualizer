@@ -1,5 +1,12 @@
  
-
+<!--
+   @file: index.html
+   @author: Nish Gowda
+   @date: 07/10/2020
+   @about: This is the basic HTML file
+   that simply displays our canvas to 
+   the user.
+-->
 <!doctype html>
 
 <html lang="en">
@@ -19,15 +26,28 @@
 <head>
 
 </head>
-<body class="container text-white bg-dark mb-3">
+<body class="container">
 <center>
-
     <h3> Convex Hull Visualizer </h3>
-    <canvas id="mycanvas" width="900" height="600"></canvas>
+    <div>
+    <button id="randomPoints"class="btn btn-primary btn-sm" >Add random points</button>
+     <button id="clearBoard" class="btn btn-primary btn-sm">Clear Board</button>
+     </div>
+    <canvas id="mycanvas" ></canvas>
+  <footer class="footer">
+      <div class="container">
+      <div>
+  <a href="https://github.com/nishgowda/Convex-Hull-Visualizer">See the Documentation</a>
+  </div>
+        <span class="text-muted">© 2020 Copyright: <a href="https://github.com/nishgowda">Nish Gowda</a></span>
+      </div>
+    </footer>
     </center>
+
 </body>
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
    <script type="text/javascript" src="convexhull.js"></script>
+   <!--BOOTSTRAP-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
